@@ -29,7 +29,7 @@
     }
 
     .contacts__woman {
-        right: 33px;
+        right: 10px;
         width: 27%;
     }
 
@@ -53,6 +53,14 @@
 
     .nav__main-transform_call {
         font-size: 16px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav__main-transform {
+        display: none;
     }
 
     .header__main {
@@ -216,12 +224,8 @@
         column-gap: 70px;
     }
 
-    .contacts__wrap-contacs {
-        max-width: 385px;
-    }
-
     .contacts__woman {
-        right: 5px;
+        display: none;
     }
 
     .footer__wrap {
@@ -283,6 +287,26 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+
+    .industry__content {
+        width: calc(38% - 15px);
+    }
+
+    .industry__title {
+        margin-bottom: 50px;
+    }
+
+    .industry__list {
+        margin-bottom: 50px;
+    }
+
+    .industry__description-cards {
+        &>div {
+            >p:last-child {
+                font-size: 13px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -308,13 +332,6 @@
 }
 
 @media (max-width: 1024px) {
-    .nav__main-transform {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-    }
 
     .header__main {
         padding: 40px 0 60px;
@@ -567,13 +584,22 @@
         column-gap: 0;
     }
 
-    .contacts__wrap-contacs {
-        max-width: 279px;
-
-        >div:first-child {
-            row-gap: 20px;
-            margin-bottom: 30px;
+    .contacts__wrap-contacs_top {
+        &>div {
+            &>p {
+                &:last-child {
+                    max-width: 360px;
+                }
+            }
         }
+    }
+
+    .contacts__form {
+        max-width: 360px;
+    }
+
+    .contacts__title-num {
+        font-size: 27px;
     }
 
     .contacts__title {
@@ -693,6 +719,27 @@
     .asiop-funcional__cards {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
+    }
+
+    .general__industry {
+        flex-direction: column;
+    }
+
+    .industry__content {
+        width: 50%;
+    }
+
+    .industry__description {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .industry__content>div {
+        display: none;
+    }
+
+    .general__description-industry {
+        font-size: 16px;
     }
 }
 
@@ -877,16 +924,6 @@
         row-gap: 40px;
     }
 
-    .contacts__wrap-contacs {
-        max-width: 375px;
-    }
-
-    .contacts__decor {
-        right: 0;
-        left: auto;
-        top: 80px;
-    }
-
     .development__img {
         transform: none;
         width: 70%;
@@ -930,6 +967,47 @@
 
     .asiop-funcional__title {
         font-size: 24px;
+    }
+
+    .contacts__wrap-contacs_top {
+        flex-direction: column;
+
+        &>div {
+            &>p {
+                &:last-child {
+                    max-width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .contacts__wrap-contacs_info {
+        row-gap: 40px;
+        flex-direction: column;
+    }
+
+    .contacts__form {
+        max-width: 100%;
+    }
+
+    .contacts__title-num {
+        font-size: 30px;
+    }
+
+    .contacts__wrap-contacs_info-text>div:first-child {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .contacts__wrap-contacs_top {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    .industry__content {
+        width: 70%;
     }
 }
 
@@ -1038,11 +1116,6 @@
         }
     }
 
-    .contacts__decor {
-        max-width: 100px;
-        top: 100px;
-    }
-
     .speech__bot-list {
         flex-direction: column;
 
@@ -1065,6 +1138,30 @@
 
     .asiop-funcional__cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .industry__content {
+        width: 100%;
+    }
+
+    .industry__description-cards {
+        grid-template-columns: repeat(1, 1fr);
+
+        >div {
+            min-height: 160px;
+
+            >p:first-child {
+                font-size: 20px;
+            }
+
+            >p:last-child {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .general__description-industry {
+        margin-bottom: 20px;
     }
 }
 
