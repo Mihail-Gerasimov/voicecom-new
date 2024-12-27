@@ -32,6 +32,10 @@
         right: 33px;
         width: 27%;
     }
+
+    .we__slide-general {
+        min-height: 280px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -222,6 +226,62 @@
 
     .footer__wrap {
         column-gap: 40px;
+    }
+
+    .asiop__subtitle {
+        font-size: 23px;
+        line-height: 14px;
+    }
+
+    .asiop__title {
+        line-height: 28px;
+    }
+
+    .speech__title {
+        margin-bottom: 20px;
+    }
+
+    .speech__bot {
+        margin-top: 40px;
+    }
+
+    .speech__bot-description {
+        margin-bottom: 30px;
+    }
+
+    .speech__bot-list {
+        >li {
+            font-size: 14px;
+        }
+    }
+
+    .speech__advantages-cards_item {
+        &>p {
+            &:nth-child(2) {
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 140%;
+            }
+
+            &:last-child {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+            }
+        }
+    }
+
+    .products-form__wrap {
+        column-gap: 120px;
+    }
+
+    .products-form__form {
+        max-width: 409px;
+    }
+
+    .asiop-funcional__cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 
@@ -537,6 +597,103 @@
             row-gap: 20px;
         }
     }
+
+    .general__products {
+        flex-direction: column;
+    }
+
+    .general__content-products {
+        row-gap: 30px;
+    }
+
+    .general__description-products {
+        font-size: 18px;
+    }
+
+    .development {
+        padding-bottom: 100px;
+    }
+
+    .development__img {
+        transform: translateY(-57%);
+        width: 43.8%;
+    }
+
+    .general__maics {
+        flex-direction: column;
+    }
+
+    .general__secure {
+        flex-direction: column;
+    }
+
+    .general__asiop {
+        flex-direction: column;
+    }
+
+    .asiop__text {
+        font-size: 18px;
+    }
+
+    .asiop__subtitle {
+        font-size: 21px;
+    }
+
+    .general__speech {
+        flex-direction: column;
+    }
+
+    .speech__bot-description {
+        font-size: 18px;
+    }
+
+    .speech__advantages-cards {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .speech__advantages-cards_item {
+        &>p {
+            &:nth-child(2) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .products-form {
+        padding-bottom: 100px;
+    }
+
+    .products-form__wrap {
+        max-width: 70%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .faq {
+        padding-bottom: 100px;
+    }
+
+    .faq__list-question {
+        font-size: 20px;
+    }
+
+    .faq__list-answer {
+        font-size: 16px;
+    }
+
+    .faq__list-item {
+        padding: 20px 25px 20px 0;
+    }
+
+    .we {
+        padding-bottom: 100px;
+    }
+
+    .asiop-funcional__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -729,6 +886,51 @@
         left: auto;
         top: 80px;
     }
+
+    .development__img {
+        transform: none;
+        width: 70%;
+    }
+
+    .development__item {
+        >p>span>br {
+            display: none;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:last-child {
+            align-items: center;
+        }
+
+        &:first-child {
+            order: 0;
+        }
+
+        &:nth-child(2) {
+            order: 3;
+        }
+
+        &:nth-child(3) {
+            order: 1;
+        }
+
+        &:last-child {
+            order: 4;
+        }
+    }
+
+    .products-form__wrap {
+        max-width: 100%;
+    }
+
+    .we__slide-general {
+        min-height: 275px;
+    }
+
+    .asiop-funcional__title {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -840,6 +1042,30 @@
         max-width: 100px;
         top: 100px;
     }
+
+    .speech__bot-list {
+        flex-direction: column;
+
+        >li {
+            max-width: 100%;
+        }
+    }
+
+    .we__slide-hover {
+        width: 100%;
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    .we__nav {
+        display: flex;
+    }
+
+    .asiop-funcional__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
@@ -856,6 +1082,10 @@
 
     .load__img {
         width: 100%;
+    }
+
+    .development__img {
+        width: 95%;
     }
 }
 

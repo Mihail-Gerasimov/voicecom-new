@@ -9,33 +9,70 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('body').classList.toggle('body-overflow');
         menu.classList.toggle('menu-active');
     })
-});
 
+    // list
+    const questions = document.querySelectorAll('.faq__list-item');
 
-const swiperTeam = new Swiper('.laboratory__swiper', {
-    spaceBetween: 20,
-    slidesPerView: 3.3,
-    loop: true,
-    navigation: {
-        nextEl: '.laboratory-next',
-        prevEl: '.laboratory-prev',
-    },
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.classList.toggle('faq__list-item--active');
+            question.lastElementChild.classList.toggle('faq__list-answer--active');
+        });
+    })
 
-    breakpoints: {
-        320: {
-            slidesPerView: 1.2,
+    const swiperOne = new Swiper('.laboratory__swiper', {
+        spaceBetween: 20,
+        slidesPerView: 3.3,
+        loop: true,
+        navigation: {
+            nextEl: '.laboratory-next',
+            prevEl: '.laboratory-prev',
         },
-        475: {
-            slidesPerView: 1.5,
-        },
-        768: {
-            slidesPerView: 2.2,
-            spaceBetween: 10,
-        },
-        1024: {
-            slidesPerView: 3.3,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1.2,
+            },
+            475: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 2.2,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 3.3,
+            }
         }
-    }
+    });
+
+    const swiperTwo = new Swiper('.we__swiper', {
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.we__next',
+            prevEl: '.we__prev',
+        },
+
+        breakpoints: {
+            375: {
+                slidesPerView: 1.2,
+            },
+            575: {
+                slidesPerView: 2.1,
+            },
+            768: {
+                slidesPerView: 2.7,
+            },
+            1024: {
+                slidesPerView: 3.1,
+                spaceBetween: 10,
+            },
+            1440: {
+                slidesPerView: 5.1,
+            }
+        }
+    });
 });
 
 // const swiperReviews = new Swiper('.reviews__slider', {
@@ -63,15 +100,6 @@ const swiperTeam = new Swiper('.laboratory__swiper', {
 // });
 
 
-// list
-const questions = document.querySelectorAll('.faq__list-item');
-
-questions.forEach(question => {
-    question.addEventListener('click', () => {
-        question.classList.toggle('faq__list-item--active');
-        question.lastElementChild.classList.toggle('faq__list-answer--active');
-    });
-})
 
 // modal
 // let modalMain = document.querySelector('[data-modal]'),
