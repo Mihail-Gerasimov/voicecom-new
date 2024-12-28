@@ -332,6 +332,41 @@
     }
 }
 
+.company--company {
+    padding-top: 100px;
+}
+
+.company__advantages {
+    margin: 70px 0 50px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.company__advantages-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+
+    &:last-child {
+        max-width: 100%;
+    }
+
+    >p:first-child {
+        font-weight: 700;
+        font-size: 3.6vw;
+        line-height: 100%;
+        color: #0e8fe3;
+    }
+
+    >p:last-child {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #181c2a;
+    }
+}
+
 .services {
     padding-bottom: 180px;
 }
@@ -423,6 +458,30 @@
             line-height: 140%;
             height: 100px;
             margin-top: 50px;
+        }
+    }
+}
+
+.partners {
+    padding-bottom: 180px;
+}
+
+.partners__wrap {
+    display: flex;
+    gap: 20px;
+    margin-top: 60px;
+
+    >div {
+        border-radius: 10px;
+        min-height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2fafd;
+        width: calc(25% - 10px);
+
+        >img {
+            width: 47%;
         }
     }
 }
@@ -534,6 +593,79 @@
 
 .laboratory {
     padding-bottom: 180px;
+}
+
+.conditions {
+    padding-bottom: 260px;
+}
+
+.conditions__title {
+    margin-bottom: 60px;
+}
+
+.conditions__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.conditions__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 75%;
+}
+
+.conditions__advantages-item {
+    display: flex;
+    column-gap: 25px;
+    width: 100%;
+    max-width: calc(50% - 12.5px);
+
+    >div {
+        border-radius: 50%;
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e8f6ff;
+        flex-shrink: 0;
+    }
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        font-weight: 500;
+        font-size: 0.95vw;
+        line-height: 140%;
+
+        >li:first-child {
+            font-weight: 700;
+            color: #0e8fe3;
+        }
+    }
+}
+
+.conditions__advantages-img {
+    max-width: 35%;
+}
+
+.conditions__banner {
+    margin-top: 58px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    padding: 39px 0;
+    background-color: #f2fafd;
+    border-radius: 20px;
+
+    >p {
+        font-weight: 600;
+        font-size: 2.2vw;
+    }
 }
 
 .contacts {

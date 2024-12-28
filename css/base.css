@@ -231,6 +231,10 @@ p {
         height: 18px;
         bottom: -10px;
         border-radius: 10px;
+
+        @media (max-width: 1024px) {
+            bottom: -5px;
+        }
     }
 
     &:hover {
@@ -818,6 +822,118 @@ p {
         max-width: max-content;
     }
 }
+
+.rounding__img-reversal {
+    right: auto;
+    left: 0;
+    width: 45%;
+    transform: translateY(-69%);
+
+    @media (max-width: 768px) {
+        width: 70%;
+        transform: none;
+        margin: 30px 0 0 0;
+    }
+
+    @media (max-width: 475px) {
+        width: 100%;
+    }
+}
+
+.rounding__table {
+    padding-bottom: 200px;
+
+    @media (max-width: 1200px) {
+        padding-bottom: 150px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-bottom: 100px;
+    }
+}
+
+.rounding__wrap-table {
+    margin-left: auto;
+    width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.rounding__table-title {
+    margin-bottom: 115px;
+
+    @media (max-width: 1440px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 1200px) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 40px;
+        font-size: 34px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 26px;
+    }
+}
+
+.rounding__table-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    >p {
+        font-weight: 600;
+        font-size: 1.05vw;
+        line-height: 140%;
+        padding: 0 25px 30px 0;
+        width: 100%;
+        max-width: 50%;
+        position: relative;
+        min-height: 87px;
+
+        &:last-child {
+            padding-bottom: 0;
+            min-height: auto;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #0e8fe3;
+            left: 0;
+            bottom: 15px;
+
+            @media (max-width: 1024px) {
+                bottom: 10px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+            padding: 0 0px 20px 0;
+            width: 100%;
+            max-width: 100%;
+            min-height: auto;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 17px;
+        }
+    }
+}
+
 
 .form {
     width: 100%;

@@ -307,6 +307,29 @@
             }
         }
     }
+
+    .conditions {
+        padding-bottom: 180px;
+    }
+
+    .conditions__advantages {
+        gap: 20px;
+    }
+
+    .conditions__advantages-item {
+        column-gap: 20px;
+        max-width: calc(50% - 10px);
+
+        >div {
+            width: 45px;
+            height: 45px;
+        }
+
+        >ul {
+            row-gap: 10px;
+        }
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -328,6 +351,14 @@
 
     .contacts__wrap {
         justify-content: space-between;
+    }
+
+    .company__advantages-item {
+        max-width: 260px;
+
+        >p:last-child {
+            font-size: 15px;
+        }
     }
 }
 
@@ -741,6 +772,66 @@
     .general__description-industry {
         font-size: 16px;
     }
+
+    .company__advantages {
+        margin: 30px 0 20px;
+        column-gap: 20px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .company__advantages-item {
+        >p:first-child {
+            font-size: 34px;
+        }
+
+        >p:last-child {
+            font-size: 14px;
+        }
+    }
+
+    .partners {
+        padding-bottom: 100px;
+    }
+
+    .partners__wrap {
+        margin-top: 60px;
+        flex-wrap: wrap;
+
+        >div {
+            width: calc(50% - 10px);
+        }
+    }
+
+    .conditions {
+        padding-bottom: 100px;
+    }
+
+    .conditions__wrap {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .conditions__advantages {
+        max-width: 100%;
+    }
+
+    .conditions__advantages-item {
+        >ul {
+            font-size: 14px;
+
+            >li:first-child {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .conditions__banner {
+        margin-top: 45px;
+        width: 100%;
+        gap: 30px;
+        padding: 25px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1009,6 +1100,32 @@
     .industry__content {
         width: 70%;
     }
+
+    .partners__wrap {
+        >div {
+            min-height: 100px;
+        }
+    }
+
+    .conditions__advantages {
+        flex-direction: column;
+    }
+
+    .conditions__advantages-item {
+        max-width: 100%;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .conditions__banner {
+        flex-direction: column;
+        padding: 25px;
+
+        >p {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -1163,8 +1280,21 @@
     .general__description-industry {
         margin-bottom: 20px;
     }
-}
 
+    .company__advantages-item:first-child>p:last-child {
+        max-width: 150px;
+    }
+
+    .partners__wrap {
+        >div {
+            min-height: 80px;
+        }
+    }
+
+    .conditions__advantages-img {
+        max-width: 60%;
+    }
+}
 
 @media (max-width: 475px) {
     .header__main-img {
@@ -1183,6 +1313,10 @@
 
     .development__img {
         width: 95%;
+    }
+
+    .conditions__advantages-img {
+        max-width: 100%;
     }
 }
 
