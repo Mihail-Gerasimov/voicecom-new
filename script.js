@@ -20,6 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     })
 
+    // list-two
+    const questionsTwo = document.querySelectorAll('.guarantees__list-item');
+
+    questionsTwo.forEach(question => {
+        question.addEventListener('click', () => {
+            question.firstElementChild.classList.toggle('guarantees__list-question_active');
+            question.lastElementChild.classList.toggle('guarantees__list-answer_active');
+        });
+    })
+
     const swiperOne = new Swiper('.laboratory__swiper', {
         spaceBetween: 20,
         slidesPerView: 3.3,
@@ -73,31 +83,39 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+    const swiperThree = new Swiper('.certificates__swiper', {
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.certificates__next',
+            prevEl: '.certificates__prev',
+        },
+
+        breakpoints: {
+            375: {
+                slidesPerView: 1.5,
+            },
+            425: {
+                slidesPerView: 1.7,
+            },
+            475: {
+                slidesPerView: 2,
+            },
+            575: {
+                slidesPerView: 2.5,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 4,
+            }
+        }
+    });
 });
 
-// const swiperReviews = new Swiper('.reviews__slider', {
-//     spaceBetween: 40,
-//     slidesPerView: 3,
-//     loop: true,
-//     pagination: {
-//         el: '.reviews__slider-pagination',
-//         type: 'bullets',
-//     },
 
-//     breakpoints: {
-//         320: {
-//             slidesPerView: 1.2,
-//             spaceBetween: 15,
-//         },
-//         768: {
-//             slidesPerView: 2.2,
-//             spaceBetween: 20,
-//         },
-//         991: {
-//             slidesPerView: 3,
-//         }
-//     }
-// });
 
 
 

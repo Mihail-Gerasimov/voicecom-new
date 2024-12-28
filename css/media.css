@@ -832,6 +832,37 @@
         gap: 30px;
         padding: 25px 0;
     }
+
+    .certificates {
+        padding-bottom: 100px;
+    }
+
+    .certificates__slide {
+        height: 280px;
+        padding: 15px;
+
+        >img {
+            width: 81%;
+        }
+    }
+
+    .certificates__nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .guarantees__list-item {
+        padding: 25px 15px;
+    }
+
+    .guarantees__list-question {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .guarantees__list-answer {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1126,6 +1157,25 @@
             text-align: center;
         }
     }
+
+    .certificates__slide {
+        >img {
+            width: 100%;
+        }
+    }
+
+    .guarantees__list {
+        flex-direction: column;
+    }
+
+    .guarantees__list-50 {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .guarantees__list-question {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1293,6 +1343,13 @@
 
     .conditions__advantages-img {
         max-width: 60%;
+    }
+
+    .certificates__slide {
+        >img {
+            width: auto;
+            height: 260px;
+        }
     }
 }
 
