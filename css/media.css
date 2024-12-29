@@ -36,6 +36,10 @@
     .we__slide-general {
         min-height: 280px;
     }
+
+    .portfolio__slide-parent {
+        max-width: 460px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -330,6 +334,54 @@
         }
     }
 
+    .infrastructure__wrap-item_circyle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .infrastructure__wrap-item_title {
+        font-size: 18px;
+        height: 37px;
+    }
+
+    .infrastructure__wrap-item_description {
+        font-size: 14px;
+    }
+
+    .infrastructure__wrap-item {
+        &::after {
+            right: -51px;
+            top: 47px;
+        }
+    }
+
+    .portfolio__slide-parent {
+        max-width: 328px;
+    }
+
+    .portfolio__slide {
+        padding: 25px;
+        height: 500px;
+    }
+
+    .portfolio__slide-title {
+        font-size: 19px;
+        height: 47px;
+        margin-bottom: 40px;
+    }
+
+    .portfolio__slide-list {
+        font-size: 13px;
+    }
+
+    .portfolio__slide-link {
+        left: 25px;
+        bottom: 25px;
+
+        >a {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -860,8 +912,94 @@
         font-weight: 600;
     }
 
+    .services--center {
+        padding-top: 100px;
+    }
+
     .guarantees__list-answer {
         font-size: 16px;
+    }
+
+    .general__services--center {
+        row-gap: 14px;
+    }
+
+    .general__content--center {
+        row-gap: 40px;
+    }
+
+    .general__content--center_btn {
+        max-width: 335px;
+    }
+
+    .general__services-item--center {
+        width: 100%;
+
+        &>p {
+            font-size: 14px;
+
+            >b {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .infrastructure {
+        padding-bottom: 100px;
+    }
+
+    .infrastructure__wrap {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .infrastructure__wrap-item {
+        gap: 14px;
+        text-align: start;
+        align-items: flex-start;
+        flex-direction: row;
+        width: calc(50% - 10px);
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .infrastructure__wrap-item_circyle {
+        flex-shrink: 0;
+    }
+
+    .infrastructure__wrap-item_title {
+        height: auto;
+        margin: 0 0 8px;
+    }
+
+    .portfolio__slide-parent {
+        max-width: auto;
+    }
+
+    .portfolio__slide {
+        padding: 20px;
+    }
+
+    .portfolio__slide-title {
+        height: 66px;
+        margin-bottom: 25px;
+        font-size: 19px;
+    }
+
+    .portfolio__nav {
+        display: flex;
+    }
+
+    .portfolio {
+        padding-bottom: 100px;
+    }
+
+    .portfolio__slide-link {
+        left: 20px;
+        bottom: 20px;
     }
 }
 
@@ -944,6 +1082,10 @@
         width: 70%;
         border-radius: 286px 286px 0 140px;
         background-image: url(../img/geometry/g-index-mob.png);
+    }
+
+    .geometry__content--center {
+        background-image: url(../img/geometry/g-center-mob.png);
     }
 
     .geometry__content-text {
@@ -1176,6 +1318,35 @@
     .guarantees__list-question {
         font-size: 18px;
     }
+
+    .rounding__wrap-center {
+        width: 100%;
+    }
+
+    .infrastructure__wrap-item {
+        width: 100%;
+    }
+
+    .infrastructure__wrap-item_circyle {
+        width: 65px;
+        height: 65px;
+
+        >svg {
+            width: 34px;
+            height: auto;
+        }
+    }
+
+    .infrastructure__text {
+        padding-left: 19px;
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 18px;
+
+        &::before {
+            width: 3px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -1351,6 +1522,10 @@
             height: 260px;
         }
     }
+
+    .portfolio__slide {
+        height: 470px;
+    }
 }
 
 @media (max-width: 475px) {
@@ -1377,4 +1552,13 @@
     }
 }
 
-@media (max-width: 425px) {}
+@media (max-width: 425px) {
+    .portfolio__slide-title {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .portfolio__slide-list {
+        font-size: 12px;
+    }
+}

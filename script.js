@@ -113,6 +113,33 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+    const swiperFourMedia = window.innerWidth;
+
+    if (swiperFourMedia < 1024) {
+        const swiperFour = new Swiper('.portfolio__swiper', {
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.portfolio__next',
+                prevEl: '.portfolio__prev',
+            },
+
+            breakpoints: {
+                375: {
+                    slidesPerView: 1.2,
+                },
+                475: {
+                    slidesPerView: 1.3,
+                },
+                575: {
+                    slidesPerView: 1.8,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+            }
+        });
+    }
 });
 
 

@@ -217,6 +217,10 @@
     position: relative;
 }
 
+.geometry__content--center {
+    background-image: url(../img/geometry/g-center.png);
+}
+
 .geometry__content-img {
     position: absolute;
     right: 0;
@@ -371,9 +375,39 @@
     padding-bottom: 180px;
 }
 
+.services--center {
+    padding-top: 180px;
+}
+
 .services__main {
     align-items: flex-start;
     flex-direction: row-reverse;
+}
+
+.general__services-item--center {
+    align-items: flex-start;
+
+    >p {
+        font-size: 0.86vw;
+
+        >b {
+            font-size: 0.97vw;
+        }
+    }
+
+    &:first-child,
+    &:last-child,
+    &:nth-child(2) {
+        align-items: center;
+    }
+}
+
+.general__content--center {
+    row-gap: 60px;
+}
+
+.general__services--center {
+    row-gap: 40px;
 }
 
 .general__content--index {
@@ -1274,6 +1308,175 @@
     display: none;
     margin-top: 20px;
     justify-content: space-between;
+}
+
+.rounding__wrap-center {
+    width: 50%;
+}
+
+.infrastructure {
+    padding-bottom: 180px;
+}
+
+.infrastructure__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infrastructure__wrap-item {
+    width: calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 41.5%;
+        height: 8px;
+        background-image: url(../img/infrastructure/infrastructure-arr.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        right: -76px;
+        top: 61px;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.infrastructure__wrap-item_title {
+    font-weight: 700;
+    font-size: 20px;
+    height: 49px;
+    display: block;
+    margin: 20px 0 8px;
+}
+
+.infrastructure__wrap-item_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.infrastructure__wrap-item_circyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 65px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #0e8fe3;
+    position: relative;
+    z-index: 0;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 110%;
+        height: 110%;
+        background-color: rgba(14, 143, 227, .3);
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.infrastructure__text {
+    padding-left: 23px;
+    position: relative;
+    max-width: 930px;
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #0e8fe3;
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 7px;
+        background-color: #0e8fe3;
+    }
+}
+
+.portfolio {
+    padding-bottom: 180px;
+}
+
+.portfolio__swiper .swiper-wrapper {
+    justify-content: space-between !important;
+}
+
+.portfolio__slide-parent {
+    max-width: 520px;
+}
+
+.portfolio__slide {
+    border: 1px solid #c0deeb;
+    border-radius: 10px;
+    padding: 40px;
+    height: 640px;
+    position: relative;
+}
+
+.portfolio__slide-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    height: 114px;
+    margin-bottom: 94px;
+}
+
+.portfolio__slide-list {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+
+    >li {
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #0e8fe3;
+            top: 3px;
+            left: 0;
+        }
+    }
+}
+
+.portfolio__slide-link {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.portfolio__nav {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
 }
 
 /* burger btn */
