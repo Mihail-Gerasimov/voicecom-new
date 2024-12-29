@@ -140,6 +140,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    document.querySelectorAll('.vacancies__item').forEach(block => {
+        block.querySelectorAll('.vacancies__item-body_preview-more').forEach(item => {
+            item.addEventListener('click', () => {
+                block.querySelectorAll('.vacancies__item-body_text').forEach(text => {
+                    text.classList.add('vacancies__item-body_text--active')
+                })
+                item.classList.add('vacancies__item-body_preview-more--active')
+            })
+        })
+    })
 });
 
 

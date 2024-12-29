@@ -40,6 +40,16 @@
     .portfolio__slide-parent {
         max-width: 460px;
     }
+
+    .geography__wrap-img {
+        max-width: 63%;
+    }
+
+    .vacancies__item-body_text {
+        >div {
+            max-width: 613px;
+        }
+    }
 }
 
 @media (max-width: 1440px) {
@@ -416,6 +426,54 @@
         right: 0;
         top: 143px;
         width: 60%;
+    }
+
+    .mess__wrap-left {
+        left: 0;
+    }
+
+    .mess__wrap {
+        >p {
+            font-size: 20px;
+        }
+    }
+
+    .run__wrap {
+        padding: 40px 40px;
+    }
+
+    .run__wrap-title {
+        margin-bottom: 40px;
+    }
+
+    .run__wrap-list {
+        font-size: 16px;
+    }
+
+    .vacancies__item-body_text {
+        flex-direction: column;
+    }
+
+    .vacancies__item-name {
+        font-size: 25px;
+    }
+
+    .vacancies__item-body_text-list {
+        font-size: 16px;
+
+        >li {
+            padding-left: 30px;
+        }
+    }
+
+    .vacancies__item-body_text {
+        >div {
+            max-width: 590px;
+        }
+    }
+
+    .vacancies__item-body_text-subtitle {
+        font-size: 16px;
     }
 }
 
@@ -1071,6 +1129,124 @@
         font-size: 12px;
     }
 
+    .geography {
+        padding-bottom: 100px;
+    }
+
+    .geography__wrap-collections {
+        >p {
+            font-size: 16px;
+        }
+    }
+
+    .geography__wrap-description {
+        font-size: 14px;
+    }
+
+    .mess__wrap {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .mess {
+        padding-bottom: 100px;
+    }
+
+    .freelance__advantages {
+        >div {
+            font-size: 16px;
+        }
+    }
+
+    .run {
+        padding-bottom: 100px;
+    }
+
+    .run__wrap {
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+
+        >img {
+            margin: 0 auto;
+        }
+    }
+
+    .run__wrap-list {
+        &>li {
+            >span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .vacancies {
+        padding-bottom: 100px;
+    }
+
+    .vacancies__item-body {
+        flex-direction: column;
+    }
+
+    .vacancies__item-name {
+        font-size: 20px;
+    }
+
+    .vacancies__item-body_text {
+        >div {
+            gap: 10px;
+        }
+    }
+
+    .vacancies__item-body_preview {
+        gap: 20px;
+    }
+
+    .vacancies__item-body {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .vacancies__item-body_text-title {
+        font-size: 18px;
+    }
+
+    .vacancies__item-body_text-list {
+        font-size: 14px;
+
+        >li {
+            padding-left: 17px;
+
+            &::before {
+                width: 14px;
+                height: 10px;
+            }
+        }
+    }
+
+    .vacancies__item-body_text-list--dot {
+        >li {
+            padding-left: 17px !important;
+
+            &::before {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+
+    .vacancies__wrap {
+        row-gap: 40px;
+    }
+
+    .vacancies__item {
+        &::after {
+            bottom: -20px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1467,6 +1643,23 @@
         width: 100%;
         position: relative;
     }
+
+    .mess__wrap-right,
+    .mess__wrap-left {
+        display: none;
+    }
+
+    .mess__wrap {
+        >a {
+            justify-content: space-between;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        >p {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -1645,6 +1838,78 @@
 
     .portfolio__slide {
         height: 470px;
+    }
+
+    .geography__wrap {
+        row-gap: 30px;
+    }
+
+    .geography__wrap-collections {
+        max-width: 100%;
+    }
+
+    .geography__wrap-img {
+        position: relative;
+        transform: none;
+        max-width: 100%;
+    }
+
+    .freelance__title {
+        font-size: 20px;
+    }
+
+    .freelance__advantages {
+        flex-direction: column;
+
+        >div {
+            width: 100%;
+        }
+    }
+
+    .run__wrap-list {
+        &>li {
+            align-items: flex-start;
+
+            >span {
+                padding-top: 2px;
+            }
+        }
+    }
+
+    .run__wrap {
+        border-radius: 0px;
+        padding-bottom: 0;
+    }
+
+    .run .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .vacancies__item-btn {
+        display: none;
+    }
+
+    .vacancies__item-btn_mob {
+        display: block;
+        margin: 0 auto;
+        max-width: 335px;
+    }
+
+    .vacancies__item-body_preview-more {
+        display: flex;
+    }
+
+    .vacancies__item-body_preview-img {
+        margin: 0 auto;
+    }
+
+    .vacancies__item-body_preview {
+        max-width: 100%;
+    }
+
+    .vacancies__item-body_text {
+        display: none;
     }
 }
 
