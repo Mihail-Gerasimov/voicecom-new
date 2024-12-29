@@ -382,6 +382,41 @@
             font-size: 16px;
         }
     }
+
+    .opportunity__wrap {
+        min-height: 550px;
+    }
+
+    .opportunity__wrap-left {
+        max-width: 395px;
+    }
+
+    .opportunity__wrap-left_top {
+        font-size: 20px;
+    }
+
+    .opportunity__wrap-left_bot {
+        row-gap: 20px;
+
+        >p {
+            font-size: 20px;
+        }
+
+        >ul {
+            row-gap: 10px;
+            font-size: 17px;
+        }
+    }
+
+    .opportunity__wrap-right p {
+        font-size: 14px;
+    }
+
+    .opportunity__wrap-img {
+        right: 0;
+        top: 143px;
+        width: 60%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1001,6 +1036,41 @@
         left: 20px;
         bottom: 20px;
     }
+
+    .opportunity {
+        padding-bottom: 100px;
+    }
+
+    .opportunity__wrap-left {
+        max-width: calc(45% - 20px);
+    }
+
+    .opportunity__wrap-left_top {
+        font-size: 17px;
+    }
+
+    .opportunity__wrap-left_bot {
+        >p {
+            font-size: 17px;
+        }
+
+        >ul {
+            font-size: 15px;
+        }
+    }
+
+    .opportunity__wrap {
+        min-height: 470px;
+    }
+
+    .opportunity__wrap-right {
+        width: calc(55% - 20px);
+    }
+
+    .opportunity__wrap-right p {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1346,6 +1416,56 @@
         &::before {
             width: 3px;
         }
+    }
+
+    .opportunity__wrap {
+        min-height: auto;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .opportunity__wrap-left {
+        max-width: 100%;
+        row-gap: 40px;
+    }
+
+    .opportunity__wrap-left_top {
+        font-size: 18px;
+    }
+
+    .opportunity__wrap-left_bot {
+        >p {
+            font-size: 18px;
+        }
+
+        >ul {
+            font-size: 16px;
+        }
+    }
+
+    .opportunity__wrap-right {
+        width: 100%;
+        row-gap: 20px;
+
+        >div {
+            gap: 20px;
+            flex-direction: column;
+
+            >p {
+                width: 100%;
+            }
+        }
+    }
+
+    .opportunity__wrap-right p {
+        font-size: 15px;
+    }
+
+    .opportunity__wrap-img {
+        right: auto;
+        top: auto;
+        width: 100%;
+        position: relative;
     }
 }
 
