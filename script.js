@@ -154,33 +154,25 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     // modal
+    let modalMain = document.querySelector('[data-modal]'),
+        modalClose = document.querySelector('[data-close]'),
+        modalOpen = document.querySelectorAll('[modal-open]');
 
+    modalOpen.forEach(btn => {
+        btn.addEventListener('click', openModal)
+    });
+    modalClose.addEventListener('click', closeModal);
 
+    function openModal() {
+        modalMain.classList.add('modal-wrap-active')
+        document.querySelector('body').style.cssText += `
+            overflow: hidden;
+        `;
+    }
+    function closeModal(event) {
+        modalMain.classList.remove('modal-wrap-active');
+        document.querySelector('body').style.cssText += `
+            overflow: inherit;
+        `;
+    }
 });
-
-
-
-
-
-// modal
-// let modalMain = document.querySelector('[data-modal]'),
-//     modalClose = document.querySelector('[data-close]'),
-//     modalOpen = document.querySelectorAll('[modal-open]'),
-//     btnModal = document.querySelectorAll('[data-submit]'),
-//     modalThanks = document.querySelector('[data-thanks]');
-
-// modalOpen.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         modalMain.classList.add('modal-wrap-active')
-//         document.querySelector('body').style.cssText += `
-//             overflow: hidden;
-//         `;
-//     })
-// });
-
-// modalClose.addEventListener('click', () => {
-//     modalMain.classList.remove('modal-wrap-active');
-//     document.querySelector('body').style.cssText += `
-//             overflow: inherit;
-//         `;
-// })
