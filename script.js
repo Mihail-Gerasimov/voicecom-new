@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // list-three
     document.querySelectorAll('.vacancies__item').forEach(block => {
         block.querySelectorAll('.vacancies__item-body_preview-more').forEach(item => {
             item.addEventListener('click', () => {
@@ -151,6 +152,10 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     })
+
+    // modal
+
+
 });
 
 

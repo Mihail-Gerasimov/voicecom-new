@@ -1141,4 +1141,76 @@ p {
     }
 }
 
+/* modal */
+.modal-wrap {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(62, 62, 62, .5);
+    overflow-y: scroll;
+}
+
+.modal-wrap-active {
+    display: block;
+}
+
+.modal-container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.modal-inner {
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 50px 70px 70px;
+    border-radius: 20px;
+    background-color: #f2faff;
+    box-shadow: 0 50px 50px -30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-inner__close {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding: 10px;
+    color: #a6bfd1;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.modal-inner__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    color: #0e8fe3;
+}
+
+.modal-inner__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: #181c2a;
+    margin-bottom: 32px;
+}
+
+.form__modal {
+    max-width: 370px;
+    row-gap: 20px;
+}
+
+/* modal */
 /* ------------------------------------------------------------------------------------------------ */
