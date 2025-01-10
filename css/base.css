@@ -1187,11 +1187,37 @@ p {
     background-color: #f2faff;
     box-shadow: 0 50px 50px -30px rgba(0, 0, 0, 0.3);
     position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        width: 498px;
+        height: 498px;
+        content: '';
+        display: block;
+        border-radius: 50%;
+        z-index: -2;
+        right: -138px;
+        top: -100px;
+        border: 1px solid rgba(144, 179, 204, .3);
+
+        @media (max-width: 575px) {
+            width: 200px;
+            height: 200px;
+            right: -25px;
+            top: -25px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        padding: 50px 15px 30px;
+        max-width: 330px;
+    }
 }
 
 .modal-inner__close {
     background-color: transparent;
-    padding: 0;
     margin: 0;
     display: block;
     padding: 10px;
@@ -1200,6 +1226,11 @@ p {
     position: absolute;
     top: 20px;
     right: 30px;
+
+    @media (max-width: 575px) {
+        top: 10px;
+        right: 10px;
+    }
 }
 
 .modal-inner__title {
@@ -1207,6 +1238,14 @@ p {
     font-size: 48px;
     line-height: 120%;
     color: #0e8fe3;
+
+    @media (max-width: 768px) {
+        font-size: 42px;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 30px;
+    }
 }
 
 .modal-inner__text {
@@ -1215,11 +1254,20 @@ p {
     line-height: 170%;
     color: #181c2a;
     margin-bottom: 32px;
+
+    @media (max-width: 575px) {
+        font-size: 17px;
+        margin: 20px 0;
+    }
 }
 
 .form__modal {
     max-width: 370px;
     row-gap: 20px;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 
 .form__input-modal {
@@ -1228,6 +1276,11 @@ p {
     line-height: 170%;
     color: #b1c7d6;
     border: 1px solid #a7cce2;
+
+    @media (max-width: 768px) {
+        padding: 14px 0 14px 14px;
+        font-size: 15px;
+    }
 }
 
 .btn__modal {
@@ -1237,6 +1290,21 @@ p {
 
     &::after {
         background-color: rgba(14, 143, 227, .3);
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.modal-inner__img {
+    position: absolute;
+    top: 137px;
+    right: 50px;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
