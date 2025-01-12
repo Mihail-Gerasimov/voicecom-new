@@ -81,6 +81,10 @@
         padding: 75px 0 90px;
     }
 
+    .header__content--general {
+        min-height: 441px;
+    }
+
     .header__content-title {
         margin-bottom: 60px;
     }
@@ -88,6 +92,10 @@
     .header__content-title_index {
         font-size: 29px;
         line-height: 29px;
+    }
+
+    .header__content-list--pv {
+        margin-bottom: 170px !important;
     }
 
     .header__content-list {
@@ -104,6 +112,10 @@
             }
         }
 
+    }
+
+    .header__content-list--cenetr {
+        margin-bottom: 90px !important;
     }
 
     .header {
@@ -522,6 +534,15 @@
         }
     }
 
+    .header__content--general {
+        min-height: 313px;
+    }
+
+    .header__content-text {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
     .header__circle {
         width: 71.7%;
         height: 138.4%;
@@ -555,6 +576,10 @@
     .header__content-title_index {
         font-size: 22px;
         line-height: 22px;
+    }
+
+    .header__content-list--pv {
+        margin-bottom: 90px !important;
     }
 
     .header__content-list {
@@ -1271,6 +1296,22 @@
         margin-bottom: 301px;
     }
 
+    .header__content-title--company {
+        margin-bottom: 27px !important;
+    }
+
+    .header__content-list--pv {
+        margin-bottom: 345px !important;
+    }
+
+    .header__content--general {
+        min-height: 569px;
+    }
+
+    .header__content-text {
+        margin-bottom: 335px;
+    }
+
     .header__circle {
         width: 336px;
         height: 336px;
@@ -1322,6 +1363,10 @@
         }
     }
 
+    .geometry {
+        padding-top: 60px;
+    }
+
     .geometry__content {
         min-height: 505px;
         margin: 0 auto;
@@ -1351,6 +1396,10 @@
                 hyphens: auto;
             }
         }
+    }
+
+    .header__content-list--cenetr {
+        margin-bottom: 335px !important;
     }
 
     .geometry__content-img {
@@ -1672,6 +1721,10 @@
 
     .header__content .btn {
         margin: 0 auto;
+    }
+
+    .header__content--general {
+        min-height: 553px;
     }
 
     .geometry__content {

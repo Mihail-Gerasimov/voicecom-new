@@ -154,6 +154,24 @@
     margin-bottom: 100px;
 }
 
+.header__content-title--company {
+    margin-bottom: 45px !important;
+}
+
+.header__content-title--pv {
+    margin-bottom: 50px !important;
+}
+
+.header__content-text {
+    margin-bottom: 132px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.header__content--general {
+    min-height: 613px;
+}
 
 .header__content-title_index {
     font-weight: 600;
@@ -175,6 +193,19 @@
         position: relative;
         padding-left: 60px;
     }
+}
+
+.header__content-list--cenetr {
+    margin-bottom: 50px !important;
+}
+
+.header__content-list--pv {
+    margin-bottom: 245px !important;
+}
+
+.header__content-list--cenetr_color {
+    color: #0e8fe3;
+    font-weight: 600;
 }
 
 .header__content-list li::before {
