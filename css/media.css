@@ -574,8 +574,8 @@
     }
 
     .header__content-title_index {
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .header__content-list--pv {
@@ -583,17 +583,17 @@
     }
 
     .header__content-list {
-        font-size: 15px;
+        font-size: 16px;
         row-gap: 8px;
         margin-bottom: 45px;
 
         >li {
-            padding-left: 23px;
+            padding-left: 44px;
 
             &::before {
-                transform: translateY(-8%);
-                width: 20px;
-                height: 14px;
+                transform: translateY(5%);
+                width: 21px;
+                height: 16px;
             }
         }
 
@@ -950,6 +950,10 @@
         flex-wrap: wrap;
     }
 
+    .company--company {
+        padding-top: 50px;
+    }
+
     .company__advantages-item {
         >p:first-child {
             font-size: 34px;
@@ -1294,6 +1298,7 @@
 
     .header__content-list {
         margin-bottom: 301px;
+        line-height: 120%;
     }
 
     .header__content-title--company {
@@ -1301,7 +1306,7 @@
     }
 
     .header__content-list--pv {
-        margin-bottom: 345px !important;
+        margin-bottom: 355px !important;
     }
 
     .header__content--general {
@@ -1309,23 +1314,23 @@
     }
 
     .header__content-text {
-        margin-bottom: 335px;
+        margin-bottom: 348px;
     }
 
     .header__circle {
         width: 336px;
         height: 336px;
         left: -69px;
-        top: 239px;
+        top: 255px;
     }
 
     .header__circle-parent {
         &::before {
             width: 11px;
             height: 11px;
-            right: 23px;
+            right: 15px;
             bottom: auto;
-            top: 64px;
+            top: 76px;
         }
 
         &::after {

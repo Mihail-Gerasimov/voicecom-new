@@ -163,7 +163,7 @@ p {
     max-width: 1600px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 5px;
+    padding: 0 7px;
 }
 
 @media (max-width: 1600px) {
@@ -355,6 +355,7 @@ p {
 
     @media (max-width: 575px) {
         font-size: 30px;
+        line-height: 110%;
     }
 }
 
