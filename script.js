@@ -30,6 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     })
 
+    //active - portfolio
+    document.querySelectorAll('.portfolio__slide').forEach(slide => {
+        slide.querySelectorAll('.portfolio__slide-link').forEach(btn => {
+            btn.addEventListener('click', () => {
+                slide.querySelectorAll('.portfolio__slide__hover').forEach((hover, e) => {
+                    hover.classList.add('portfolio__slide__hover--active');
+
+                    hover.addEventListener('click', (e) => {
+                        if (e.target) {
+                            hover.classList.remove('portfolio__slide__hover--active');
+                        }
+                    })
+                })
+            })
+        })
+    })
+
     const swiperOne = new Swiper('.laboratory__swiper', {
         spaceBetween: 20,
         slidesPerView: 3.3,

@@ -412,7 +412,11 @@ p {
         position: relative;
 
         @media (max-width: 1024px) {
-            font-size: 14px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 475px) {
+            padding: 0 0 20px 30px;
         }
 
         &::before {
@@ -433,7 +437,7 @@ p {
             &::before {
                 width: 14px;
                 height: 13px;
-                top: 1px;
+                top: 3px;
             }
         }
 
