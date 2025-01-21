@@ -53,6 +53,33 @@
 }
 
 @media (max-width: 1440px) {
+    .portfolio__slide__hover--list {
+        max-height: 293px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #ffffff;
+            -webkit-box-shadow: 0 0 1px #ffffff;
+        }
+
+        >li {
+            padding-right: 5px !important;
+        }
+    }
+
+    .portfolio__slide__hover {
+        padding: 25px;
+    }
+
+    .portfolio__slide__hover--btn {
+        max-width: calc(100% - 50px);
+    }
+
     .logo {
         max-width: 150px;
     }
@@ -1103,6 +1130,14 @@
 
     .portfolio__slide {
         padding: 20px;
+    }
+
+    .portfolio__slide__hover {
+        padding: 20px;
+    }
+
+    .portfolio__slide__hover--btn {
+        max-width: calc(100% - 40px);
     }
 
     .portfolio__slide-title {

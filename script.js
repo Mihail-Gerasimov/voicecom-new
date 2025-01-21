@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
             overflow: hidden;
         `;
     }
-    function closeModal(event) {
+    function closeModal() {
         modalMain.classList.remove('modal-wrap-active');
         document.querySelector('body').style.cssText += `
             overflow: inherit;
