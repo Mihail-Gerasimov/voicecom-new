@@ -121,8 +121,12 @@
         line-height: 29px;
     }
 
-    .header__content-list--pv {
+    .header__content-list--p {
         margin-bottom: 170px !important;
+    }
+
+    .header__content-list--v {
+        margin-bottom: 190px !important;
     }
 
     .header__content-list {
@@ -605,7 +609,7 @@
         line-height: 20px;
     }
 
-    .header__content-list--pv {
+    .header__content-list--p {
         margin-bottom: 90px !important;
     }
 
@@ -1344,8 +1348,12 @@
         margin-bottom: 27px !important;
     }
 
-    .header__content-list--pv {
+    .header__content-list--p {
         margin-bottom: 355px !important;
+    }
+
+    .header__content-list--v {
+        margin-bottom: 410px !important;
     }
 
     .header__content--general {
