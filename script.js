@@ -11,30 +11,33 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     // list
-    const questions = document.querySelectorAll('.faq__list-item');
-
-    questions.forEach(question => {
-        question.addEventListener('click', () => {
-            question.classList.toggle('faq__list-item--active');
-            question.lastElementChild.classList.toggle('faq__list-answer--active');
-        });
-    })
+    const question = document.querySelectorAll('.faq__list-item');
 
     // list-two
     const questionsTwo = document.querySelectorAll('.guarantees__list-item');
 
-    questionsTwo.forEach(question => {
-        question.addEventListener('click', () => {
-            question.firstElementChild.classList.toggle('guarantees__list-question_active');
-            question.lastElementChild.classList.toggle('guarantees__list-answer_active');
-        });
-    })
+    function listActive(params) {
+        params.forEach(question => {
+            question.addEventListener('click', () => {
+                if (question.classList.contains('guarantees__list-item')) {
+                    question.firstElementChild.classList.toggle('guarantees__list-question_active');
+                    question.lastElementChild.classList.toggle('guarantees__list-answer_active');
+                } else {
+                    question.classList.toggle('faq__list-item--active');
+                    question.lastElementChild.classList.toggle('faq__list-answer--active');
+                }
+            });
+        })
+    }
+
+    listActive(question);
+    listActive(questionsTwo);
 
     //active - portfolio
     document.querySelectorAll('.portfolio__slide').forEach(slide => {
         slide.querySelectorAll('.portfolio__slide-link').forEach(btn => {
             btn.addEventListener('click', () => {
-                slide.querySelectorAll('.portfolio__slide__hover').forEach((hover, e) => {
+                slide.querySelectorAll('.portfolio__slide__hover').forEach((hover) => {
                     hover.classList.add('portfolio__slide__hover--active');
 
                     hover.addEventListener('click', (e) => {

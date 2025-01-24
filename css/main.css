@@ -1474,7 +1474,6 @@
     height: 640px;
     position: relative;
     z-index: 0;
-    cursor: pointer;
 }
 
 .portfolio__slide__hover {
@@ -1570,6 +1569,7 @@
     position: absolute;
     left: 40px;
     bottom: 40px;
+    cursor: pointer;
 }
 
 .portfolio__nav {
